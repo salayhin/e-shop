@@ -1,4 +1,13 @@
 EShop::Application.routes.draw do
+  resources :products
+
+
+  resources :manufacturers
+
+
+  resources :categories
+
+
   devise_for :users, :admins
 
 

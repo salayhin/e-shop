@@ -1,0 +1,69 @@
+<%= form_for(@product) do |f| %>
+  <% if @product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% @product.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :product_code %><br />
+    <%= f.text_field :product_code %>
+  </div>
+  <div class="field">
+    <%= f.label :meta_tag_description %><br />
+    <%= f.text_field :meta_tag_description %>
+  </div>
+  <div class="field">
+    <%= f.label :meta_tag_keywords %><br />
+    <%= f.text_field :meta_tag_keywords %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :product_tags %><br />
+    <%= f.text_field :product_tags %>
+  </div>
+  <div class="field">
+    <%= f.label :sku %><br />
+    <%= f.text_field :sku %>
+  </div>
+  <div class="field">
+    <%= f.label :upc %><br />
+    <%= f.text_field :upc %>
+  </div>
+  <div class="field">
+    <%= f.label :ean %><br />
+    <%= f.text_field :ean %>
+  </div>
+  <div class="field">
+    <%= f.label :jan %><br />
+    <%= f.text_field :jan %>
+  </div>
+  <div class="field">
+    <%= f.label :isbn %><br />
+    <%= f.text_field :isbn %>
+  </div>
+  <div class="field">
+    <%= f.label :mpn %><br />
+    <%= f.text_field :mpn %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

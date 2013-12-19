@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  product_code: MyString
+  meta_tag_description: MyString
+  meta_tag_keywords: MyString
+  description: MyString
+  product_tags: MyString
+  sku: MyString
+  upc: MyString
+  ean: MyString
+  jan: MyString
+  isbn: MyString
+  mpn: MyString
+  price: 1.5
+
+two:
+  name: MyString
+  product_code: MyString
+  meta_tag_description: MyString
+  meta_tag_keywords: MyString
+  description: MyString
+  product_tags: MyString
+  sku: MyString
+  upc: MyString
+  ean: MyString
+  jan: MyString
+  isbn: MyString
+  mpn: MyString
+  price: 1.5
