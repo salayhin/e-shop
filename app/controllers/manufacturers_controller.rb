@@ -1,4 +1,5 @@
 class ManufacturersController < ApplicationController
+  before_filter :authenticate_admin!
   # GET /manufacturers
   # GET /manufacturers.json
   def index
