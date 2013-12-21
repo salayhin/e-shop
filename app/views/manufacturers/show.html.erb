@@ -1,20 +1,23 @@
 <p id="notice"><%= notice %></p>
+<table class="table table-bordered">
 
-<p>
-  <b>Name:</b>
-  <%= @manufacturer.name %>
-</p>
+  <tr>
+    <td width="20%"><strong>Name:</strong></td>
+    <td> <%= @manufacturer.name %></td>
+  </tr>
 
-<p>
-  <b>Image:</b>
-  <%= @manufacturer.image %>
-</p>
+  <tr>
+    <td><strong>Image:</strong></td>
+    <td> <%= @manufacturer.image %></td>
+  </tr>
 
-<p>
-  <b>Sort order:</b>
-  <%= @manufacturer.sort_order %>
-</p>
+  <tr>
+    <td><strong>Sort order:</strong></td>
+    <td> <%= @manufacturer.sort_order %></td>
+  </tr>
 
 
-<%= link_to 'Edit', edit_manufacturer_path(@manufacturer) %> |
-<%= link_to 'Back', manufacturers_path %>
+</table>
+
+<%= link_to 'Edit', edit_manufacturer_path(@manufacturer) , :class => 'btn btn-info'%> |
+<%= link_to 'Back', manufacturers_path , :class => 'btn btn-info'%>
