@@ -1,4 +1,5 @@
-<h1>Categories</h1>
+<h3>Categories</h3>
+<hr />
 
 <table class="table table-hover">
   <tr>
@@ -6,8 +7,6 @@
     <th>Meta tag description</th>
     <th>Meta tag keywords</th>
     <th>Description</th>
-    <th></th>
-    <th></th>
     <th></th>
   </tr>
 
@@ -17,13 +16,15 @@
     <td><%= category.meta_tag_description %></td>
     <td><%= category.meta_tag_keywords %></td>
     <td><%= category.description %></td>
-    <td><%= link_to 'Show', category %></td>
-    <td><%= link_to 'Edit', edit_category_path(category) %></td>
-    <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td>
+      <%= link_to 'Show', category , :class => 'btn btn-primary btn-xs'%>
+      <%= link_to 'Edit', edit_category_path(category), :class => 'btn btn-warning btn-xs' %>
+      <%= link_to 'Destroy', category,:class => 'btn btn-danger btn-xs', method: :delete, data: { confirm: 'Are you sure?' } %>
+    </td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Category', new_category_path %>
+<%= link_to 'New Category', new_category_path , :class => 'btn btn-info'%>

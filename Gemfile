@@ -21,6 +21,7 @@ group :assets do
 end
 
 gem 'bootstrap-sass', '~> 3.0.3.0'
+gem "client_side_validations", "~> 3.2.6"
 
 group :development do
   gem "better_errors", "~> 1.0.1"

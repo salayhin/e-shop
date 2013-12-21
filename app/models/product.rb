@@ -3,4 +3,6 @@ class Product < ActiveRecord::Base
 
   has_and_belongs_to_many :categories
   belongs_to :manufacturer
+
+  validates_presence_of :name, :product_code, :description, :price
 end
