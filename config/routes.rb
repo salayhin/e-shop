@@ -10,11 +10,10 @@ EShop::Application.routes.draw do
 
   devise_for :users, :admins
 
-
   resources :admins
   resources :users
 
-  root :to => "home#index"
+  root :to => "admins#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

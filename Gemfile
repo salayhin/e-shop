@@ -20,10 +20,12 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'bootstrap-sass', '~> 3.0.3.0'
+
 group :development do
   gem "better_errors", "~> 1.0.1"
+  gem "rails_layout", "~> 0.5.8"
 end
-
 
 gem 'jquery-rails'
 gem "haml", "~> 4.0.4"

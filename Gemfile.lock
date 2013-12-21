@@ -34,6 +34,8 @@ GEM
     better_errors (1.0.1)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
+    bootstrap-sass (3.0.3.0)
+      sass (~> 3.2)
     builder (3.0.4)
     coderay (1.1.0)
     coffee-rails (3.2.2)
@@ -83,6 +85,7 @@ GEM
       activesupport (= 3.2.16)
       bundler (~> 1.0)
       railties (= 3.2.16)
+    rails_layout (0.5.8)
     railties (3.2.16)
       actionpack (= 3.2.16)
       activesupport (= 3.2.16)
@@ -122,11 +125,13 @@ PLATFORMS
 
 DEPENDENCIES
   better_errors (~> 1.0.1)
+  bootstrap-sass (~> 3.0.3.0)
   coffee-rails (~> 3.2.1)
   devise (~> 3.2.2)
   haml (~> 4.0.4)
   jquery-rails
   mysql2
   rails (= 3.2.16)
+  rails_layout (~> 0.5.8)
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
