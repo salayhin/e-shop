@@ -12,7 +12,7 @@
 <% @manufacturers.each do |manufacturer| %>
   <tr>
     <td><%= manufacturer.name %></td>
-    <td><%= manufacturer.image %></td>
+    <td><%= image_tag manufacturer.image_url(:list_view).to_s %></td>
     <td><%= manufacturer.sort_order %></td>
     <td>
       <%= link_to 'Show', manufacturer, :class => 'btn btn-primary btn-xs' %>

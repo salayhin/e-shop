@@ -1,5 +1,5 @@
 <div class="form-horizontal">
-  <%= form_for (@manufacturer), :validate => true do |f| %>
+  <%= form_for (@manufacturer), :html=> {:multipart => true}, :validate => true  do |f| %>
       <% if @manufacturer.errors.any? %>
           <div id="error_explanation">
             <h2><%= pluralize(@manufacturer.errors.count, "error") %> prohibited this manufacturer from being saved:</h2>
@@ -18,13 +18,21 @@
           <%= f.text_field :name , :class=>"form-control"%>
         </div>
       </div>
-
+      <% if @manufacturer.image.present? %>
+      <div class="form-group">
+        <%= f.label :image , :class=> 'col-sm-2 control-label'%>
+        <div class="col-sm-2">
+          <%= image_tag @manufacturer.image_url(:list_view).to_s %>
+        </div>
+      </div>
+      <% else %>
       <div class="form-group">
         <%= f.label :image , :class=> 'col-sm-2 control-label'%>
         <div class="col-sm-6">
-          <%= f.text_field :image , :class=>"form-control"%>
+          <%= f.file_field :image %>
         </div>
       </div>
+      <% end %>
 
       <div class="form-group">
         <%= f.label :sort_order , :class=> 'col-sm-2 control-label'%>

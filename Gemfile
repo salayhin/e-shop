@@ -22,6 +22,8 @@ end
 
 gem 'bootstrap-sass', '~> 3.0.3.0'
 gem "client_side_validations", "~> 3.2.6"
+gem "carrierwave", "~> 0.9.0"
+gem "rmagick", "~> 2.13.2"
 
 group :development do
   gem "better_errors", "~> 1.0.1"

@@ -10,8 +10,11 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require_self
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
 //= require rails.validations
+//= require chosen/chosen.jquery.min
+//= require custom
 //= require_tree .

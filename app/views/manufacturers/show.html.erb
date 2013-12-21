@@ -8,7 +8,7 @@
 
   <tr>
     <td><strong>Image:</strong></td>
-    <td> <%= @manufacturer.image %></td>
+    <td> <%= image_tag @manufacturer.image_url(:thumb).to_s %></td>
   </tr>
 
   <tr>
