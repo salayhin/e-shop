@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   before_filter :authenticate_admin!
+  layout 'admin'
   # GET /products
   # GET /products.json
   def index

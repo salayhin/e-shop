@@ -1,22 +1,11 @@
-<h1>Listing products</h1>
+<h1>Products</h1>
 
-<table>
+<table class="table table-hover">
   <tr>
     <th>Name</th>
     <th>Product code</th>
-    <th>Meta tag description</th>
-    <th>Meta tag keywords</th>
-    <th>Description</th>
     <th>Product tags</th>
-    <th>Sku</th>
-    <th>Upc</th>
-    <th>Ean</th>
-    <th>Jan</th>
-    <th>Isbn</th>
-    <th>Mpn</th>
     <th>Price</th>
-    <th></th>
-    <th></th>
     <th></th>
   </tr>
 
@@ -24,24 +13,17 @@
   <tr>
     <td><%= product.name %></td>
     <td><%= product.product_code %></td>
-    <td><%= product.meta_tag_description %></td>
-    <td><%= product.meta_tag_keywords %></td>
-    <td><%= product.description %></td>
     <td><%= product.product_tags %></td>
-    <td><%= product.sku %></td>
-    <td><%= product.upc %></td>
-    <td><%= product.ean %></td>
-    <td><%= product.jan %></td>
-    <td><%= product.isbn %></td>
-    <td><%= product.mpn %></td>
     <td><%= product.price %></td>
-    <td><%= link_to 'Show', product %></td>
-    <td><%= link_to 'Edit', edit_product_path(product) %></td>
-    <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td>
+      <%= link_to 'Show', product, :class => 'btn btn-primary btn-xs' %>
+      <%= link_to 'Edit', edit_product_path(product), :class => 'btn btn-warning btn-xs' %>
+      <%= link_to 'Destroy', product, :class => 'btn btn-danger btn-xs', method: :delete, data: { confirm: 'Are you sure?' } %>
+    </td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Product', new_product_path %>
+<%= link_to 'New Product', new_product_path, :class => 'btn btn-info' %>

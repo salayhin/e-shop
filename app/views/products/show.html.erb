@@ -1,70 +1,71 @@
 <p id="notice"><%= notice %></p>
+<table class="table table-bordered">
+  <tr>
+    <td width="20%"><strong>Name:</strong></td>
+    <td> <%= @product.name %></td>
+  </tr>
 
-<p>
-  <b>Name:</b>
-  <%= @product.name %>
-</p>
+  <tr>
+    <td><strong>Product code:</strong></td>
+    <td> <%= @product.product_code %></td>
+  </tr>
 
-<p>
-  <b>Product code:</b>
-  <%= @product.product_code %>
-</p>
+  <tr>
+    <td><strong>Meta tag description:</strong></td>
+    <td> <%= @product.meta_tag_description %></td>
+  </tr>
 
-<p>
-  <b>Meta tag description:</b>
-  <%= @product.meta_tag_description %>
-</p>
+  <tr>
+    <td><strong>Meta tag keywords:</strong></td>
+    <td> <%= @product.meta_tag_keywords %></td>
+  </tr>
 
-<p>
-  <b>Meta tag keywords:</b>
-  <%= @product.meta_tag_keywords %>
-</p>
+  <tr>
+    <td><strong>Description:</strong></td>
+    <td><%= @product.description %></td>
+  </tr>
 
-<p>
-  <b>Description:</b>
-  <%= @product.description %>
-</p>
+  <tr>
+    <td><strong>Product tags:</strong></td>
+    <td><%= @product.product_tags %></td>
+  </tr>
 
-<p>
-  <b>Product tags:</b>
-  <%= @product.product_tags %>
-</p>
+  <tr>
+    <td><strong>Sku:</strong></td>
+    <td><%= @product.sku %></td>
+  </tr>
 
-<p>
-  <b>Sku:</b>
-  <%= @product.sku %>
-</p>
+  <tr>
+    <td><strong>Upc:</strong></td>
+    <td><%= @product.upc %></td>
+  </tr>
 
-<p>
-  <b>Upc:</b>
-  <%= @product.upc %>
-</p>
+  <tr>
+    <td><strong>Ean:</strong></td>
+    <td><%= @product.ean %></td>
+  </tr>
 
-<p>
-  <b>Ean:</b>
-  <%= @product.ean %>
-</p>
+  <tr>
+    <td><strong>Jan:</strong></td>
+    <td><%= @product.jan %></td>
+  </tr>
 
-<p>
-  <b>Jan:</b>
-  <%= @product.jan %>
-</p>
+  <tr>
+    <td><strong>Isbn:</strong></td>
+    <td><%= @product.isbn %></td>
+  </tr>
 
-<p>
-  <b>Isbn:</b>
-  <%= @product.isbn %>
-</p>
+  <tr>
+    <td><strong>Mpn:</strong></td>
+    <td><%= @product.mpn %></td>
+  </tr>
 
-<p>
-  <b>Mpn:</b>
-  <%= @product.mpn %>
-</p>
+  <tr>
+    <td><strong>Price:</strong></td>
+    <td><%= @product.price %></td>
+  </tr>
 
-<p>
-  <b>Price:</b>
-  <%= @product.price %>
-</p>
+</table>
 
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<%= link_to 'Edit', edit_product_path(@product) , :class => 'btn btn-info'%> |
+<%= link_to 'Back', products_path , :class => 'btn btn-info'%>

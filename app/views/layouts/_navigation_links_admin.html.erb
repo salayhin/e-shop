@@ -1,5 +1,9 @@
 <%# add navigation links to this file %>
-
+<ul class="nav navbar-nav">
+  <li><%= link_to 'Products',products_path %></li>
+  <li><%= link_to 'Categories',categories_path %></li>
+  <li><%= link_to 'Manufacturer',manufacturers_path %></li>
+</ul>
 <% if admin_signed_in? %>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#"><%= current_admin.email %></a></li>
